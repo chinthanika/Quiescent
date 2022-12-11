@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/honeydew"
+    tools:context="MainFragment">
+
+    <!--Timer Card-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/timeView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="88dp"
+        android:clickable="true"
+        android:paddingLeft="400dp"
+        android:paddingTop="400dp"
+        android:paddingEnd="400dp"
+        android:paddingRight="400dp"
+        android:paddingBottom="40dp"
+        app:cardBackgroundColor="@color/honeydew"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true">
+
+        <!--Constraint Layout for internal elements-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/time_constLayout"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/honeydew"
+            android:layoutMode="opticalBounds"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="496dp">
+
+            <ImageView
+                android:id="@+id/time_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/time_alt"
+                android:src="@drawable/ic_timer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/time_tag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@drawable/ic_timer" />
+
+            <TextView
+                android:id="@+id/time_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/time_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/myrtle_green"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sched_statement2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/timer_help"
+                android:textColor="@color/myrtle_green"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/time_img"
+                app:layout_constraintTop_toBottomOf="@+id/time_tag" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--Mindfulness Exercise Card-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ME_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:paddingLeft="400dp"
+        android:paddingTop="400dp"
+        android:paddingEnd="400dp"
+        android:paddingRight="400dp"
+        android:paddingBottom="40dp"
+        app:cardBackgroundColor="@color/honeydew"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true">
+
+        <!--Constraint Layout for internal elements-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ME_constLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="248dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/honeydew"
+            android:clickable="false"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="496dp">
+
+            <ImageView
+                android:id="@+id/ME_img"
+                android:layout_width="wrap_content"
+                android:layout_height="141dp"
+                android:adjustViewBounds="false"
+                android:clickable="false"
+                android:contentDescription="@string/ME_alt"
+                android:src="@drawable/mental_health_bro"
+                app:layout_constraintBottom_toTopOf="@+id/ME_tag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506" />
+
+            <TextView
+                android:id="@+id/ME_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/honeydew"
+                android:ems="10"
+                android:fontFamily="casual"
+                android:includeFontPadding="false"
+                android:text="@string/ME_tag"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/wintergrass_dream"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sched_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingLeft="400dp"
+        android:paddingTop="400dp"
+        android:paddingEnd="400dp"
+        android:paddingRight="400dp"
+        android:paddingBottom="40dp"
+        app:cardBackgroundColor="@color/honeydew"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/timeView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ME_view">
+
+        <!--Constraint Layout for internal elements-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sched_constLayout"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/honeydew"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="496dp">
+
+            <ImageView
+                android:id="@+id/sched_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/sched_alt"
+                android:src="@drawable/ic_access_time_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sched_tag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/sched_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/sched_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/myrtle_green"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sched_statement"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/sched_help"
+                android:textColor="@color/myrtle_green"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sched_img"
+                app:layout_constraintTop_toBottomOf="@+id/sched_tag" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

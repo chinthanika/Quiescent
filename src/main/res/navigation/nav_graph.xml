@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MeditateFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.quiescent.fragments.MainFragment"
+        android:label="@string/dashboard_frag"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_MainFragment_to_MeditateFragment"
+            app:destination="@id/MeditateFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/MeditateFragment"
+        android:name="com.quiescent.fragments.MeditateFragment"
+        android:label="@string/me_frag"
+        tools:layout="@layout/fragment_meditate">
+
+        <action
+            android:id="@+id/action_MeditateFragment_to_MainFragment"
+            app:destination="@id/MainFragment"/>
+    </fragment>
+</navigation>

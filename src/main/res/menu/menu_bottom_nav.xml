@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:contentDescription="@string/dashboard_frag"
+        android:icon="@drawable/ic_help_black"
+        android:title="@string/dashboard_frag" />
+
+    <item
+        android:id="@+id/timer"
+        android:icon="@drawable/ic_timer"
+        android:contentDescription="@string/time_alt"
+        android:title="@string/time_title" />
+
+    <item
+        android:id="@+id/meditation"
+        android:icon="@drawable/mental_health_bro"
+        android:contentDescription="@string/ME_alt"
+        android:title="@string/me_frag" />
+
+    <item
+        android:id="@+id/scheduler"
+        android:icon="@drawable/ic_access_time_black_24dp"
+        android:contentDescription="@string/sched_alt"
+        android:title="@string/sched_title" />
+
+</menu>

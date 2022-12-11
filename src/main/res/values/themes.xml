@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Quiescent" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/myrtle_green</item>
+        <item name="colorPrimaryVariant">@color/wintergrass_dream</item>
+        <item name="colorOnPrimary">@color/basic_green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/celadon</item>
+        <item name="colorSecondaryVariant">@color/honeydew</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Quiescent.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Quiescent.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Quiescent.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/honeydew</item>
+        <item name="colorPrimaryDark">@color/myrtle_green</item>
+
+        <item name="colorAccent">@color/wintergrass_dream</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.SettingsDialog" parent="@android:style/Theme.Material.Dialog.Presentation">
+        <item name="android:seekBarStyle">@style/Theme.SeekBar</item>
+        <item name="android:buttonStyle">@style/Theme.Button</item>
+        <item name="android:colorPrimary">@color/honeydew</item>
+        <item name="android:colorPrimaryDark">@color/myrtle_green</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="Theme.SeekBar" parent="@style/Widget.AppCompat.SeekBar.Discrete">
+        <item name="android:progressTint">@color/myrtle_green</item>
+        <item name="tickMark">@drawable/tick_mark</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:progressBackgroundTint">@color/wintergrass_dream</item>
+    </style>
+
+    <style name="Theme.Button" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:colorButtonNormal">@color/myrtle_green</item>
+        <item name="android:colorControlHighlight">@color/celadon</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
